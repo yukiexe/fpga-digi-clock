@@ -1,0 +1,51 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/yukiexe/Dropbox/Code/Verilog/Digi_clock/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/yukiexe/Dropbox/Code/Verilog/Digi_clock/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SetTime.v" in library work
+Compiling verilog file "counter60.v" in library work
+Module <SetTime> compiled
+Compiling verilog file "counter24.v" in library work
+Module <counter60> compiled
+Compiling verilog file "disp.v" in library work
+Module <counter24> compiled
+Compiling verilog file "clock.v" in library work
+Module <disp> compiled
+Compiling verilog file "clk_gen.v" in library work
+Module <clock> compiled
+Compiling verilog file "AlarmClock.v" in library work
+Module <clk_gen> compiled
+Compiling verilog file "digi_clock.v" in library work
+Module <AlarmClock> compiled
+Module <digi_clock> compiled
+No errors in compilation
+Analysis of file <"digi_clock.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+
+Total memory usage is 211076 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

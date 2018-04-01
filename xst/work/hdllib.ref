@@ -1,0 +1,8 @@
+MO counter24 NULL counter24.v vlg3E/counter24.bin 1389038983
+MO clock NULL clock.v vlg20/clock.bin 1389038983
+MO counter60 NULL counter60.v vlg4E/counter60.bin 1389038983
+MO clk_gen NULL clk_gen.v vlg6B/clk__gen.bin 1389038983
+MO digi_clock NULL digi_clock.v vlg54/digi__clock.bin 1389038983
+MO AlarmClock NULL AlarmClock.v vlg31/_alarm_clock.bin 1389038983
+MO SetTime NULL SetTime.v vlg53/_set_time.bin 1389038983
+MO disp NULL disp.v vlg44/disp.bin 1389038983

@@ -1,0 +1,8 @@
+verilog work "SetTime.v"
+verilog work "counter60.v"
+verilog work "counter24.v"
+verilog work "disp.v"
+verilog work "clock.v"
+verilog work "clk_gen.v"
+verilog work "AlarmClock.v"
+verilog work "digi_clock.v"

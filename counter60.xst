@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/yukiexe/Dropbox/Code/Verilog/Digi_clock/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/yukiexe/Dropbox/Code/Verilog/Digi_clock/xst"
+elaborate
+-ifn counter60.prj
+-ifmt mixed

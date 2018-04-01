@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\yukiexe\Dropbox\Code\Verilog\digi_clock\impact.xsl
+OUTFILE=C:\Users\yukiexe\Dropbox\Code\Verilog\digi_clock\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\yukiexe\Dropbox\Code\Verilog\digi_clock
+LICENSE=iMPACT
+USER_INFO=iMPACT

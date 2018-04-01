@@ -1,0 +1,182 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                            Xilinx XPower Analyzer                                                             |
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Release                | 14.7 - P.20131013 (nt64)                                                                                             |
+| Command Line           | C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\xpwr.exe -intstyle ise digi_clock.ncd digi_clock.pcf -o digi_clock.pwr  |
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------
+|      Table of Contents       |
+--------------------------------
+| 1.  Settings                 |
+| 1.1.  Project                |
+| 1.2.  Device                 |
+| 1.3.  Environment            |
+| 1.4.  Default Activity Rates |
+| 2.  Summary                  |
+| 2.1.  On-Chip Power Summary  |
+| 2.2.  Thermal Summary        |
+| 2.3.  Power Supply Summary   |
+| 2.4.  Confidence Level       |
+| 3.  Detailed Reports         |
+| 3.1.  By Hierarchy           |
+| 4.  Warnings                 |
+--------------------------------
+
+1.  Settings
+1.1.  Project
+----------------------------------------------
+|                  Project                   |
+----------------------------------------------
+| Design File               | digi_clock.ncd |
+| Settings File             | NA             |
+| Physical Constraints File | digi_clock.pcf |
+| Simulation Activity File  | NA             |
+| Design Nets Matched       | NA             |
+| Simulation Nets Matched   | NA             |
+----------------------------------------------
+
+1.2.  Device
+-----------------------------------------------
+|                   Device                    |
+-----------------------------------------------
+| Family           | Spartan3e                |
+| Part             | xc3s100e                 |
+| Package          | cp132                    |
+| Temp Grade       | Commercial               |
+| Process          | Typical                  |
+| Speed Grade      | -4                       |
+| Characterization | PRODUCTION,v1.2,06-23-09 |
+-----------------------------------------------
+
+1.3.  Environment
+---------------------------
+|       Environment       |
+---------------------------
+| Ambient Temp (C) | 25.0 |
+| Use custom TJA?  | No   |
+| Custom TJA (C/W) | NA   |
+| Airflow (LFM)    | 0    |
+---------------------------
+
+1.4.  Default Activity Rates
+----------------------------------
+|     Default Activity Rates     |
+----------------------------------
+| FF Toggle Rate (%)     | 12.5  |
+| I/O Toggle Rate (%)    | 12.5  |
+| Output Load (pF)       | 5.0   |
+| I/O Enable Rate (%)    | 100.0 |
+| BRAM Write Rate (%)    | 50.0  |
+| BRAM Enable Rate (%)   | 50.0  |
+----------------------------------
+
+2.  Summary
+2.1.  On-Chip Power Summary
+-----------------------------------------------------------------------------
+|                           On-Chip Power Summary                           |
+-----------------------------------------------------------------------------
+|        On-Chip        | Power (mW) |  Used  | Available | Utilization (%) |
+-----------------------------------------------------------------------------
+| Clocks                |       0.00 |      4 |    ---    |       ---       |
+| Logic                 |       0.00 |    354 |      1920 |              18 |
+| Signals               |       0.00 |    345 |    ---    |       ---       |
+| IOs                   |       0.00 |     29 |        83 |              35 |
+| Static Power          |      33.66 |        |           |                 |
+| Total                 |      33.66 |        |           |                 |
+-----------------------------------------------------------------------------
+
+2.2.  Thermal Summary
+------------------------------
+|      Thermal Summary       |
+------------------------------
+| Effective TJA (C/W) | 62.1 |
+| Max Ambient (C)     | 82.9 |
+| Junction Temp (C)   | 27.1 |
+------------------------------
+
+2.3.  Power Supply Summary
+---------------------------------------------------------
+|                 Power Supply Summary                  |
+---------------------------------------------------------
+|                      | Total | Dynamic | Static Power |
+---------------------------------------------------------
+| Supply Power (mW)    | 33.66 | 0.00    | 33.66        |
+---------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+|                                            Power Supply Currents                                            |
+---------------------------------------------------------------------------------------------------------------
+|     Supply Source     | Supply Voltage | Total Current (mA) | Dynamic Current (mA) | Quiescent Current (mA) |
+---------------------------------------------------------------------------------------------------------------
+| Vccint                |          1.200 |               8.26 |                 0.00 |                   8.26 |
+| Vccaux                |          2.500 |               8.00 |                 0.00 |                   8.00 |
+| Vcco25                |          2.500 |               1.50 |                 0.00 |                   1.50 |
+---------------------------------------------------------------------------------------------------------------
+
+2.4.  Confidence Level
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                    Confidence Level                                                                                                    |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       User Input Data       | Confidence |                        Details                         |                                                       Action                                                       |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Design implementation state | High       | Design is completely routed                            |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.  Details
+3.1.  By Hierarchy
+-----------------------------------------------------------------------------------------------------------
+|  By Hierarchy   | Power (mW) | Logic Power (mW) | Signal Power (mW) |      # FFs      |     # LUTs      |
+-----------------------------------------------------------------------------------------------------------
+| Hierarchy total |   0.00     |   0.00           |   0.00            |    122          |    323          |
+|   digi_clock    |   0.00     |   0.00           |   0.00            |      2 /    122 |     65 /    323 |
+|     setT        |   0.00     |   0.00           |   0.00            |     13          |     21          |
+|     div_5M      |   0.00     |   0.00           |   0.00            |     16          |     28          |
+|     div_2       |   0.00     |   0.00           |   0.00            |      2          |      0          |
+|     div_100     |   0.00     |   0.00           |   0.00            |      7          |     12          |
+|     div_10      |   0.00     |   0.00           |   0.00            |     10          |     17          |
+|     c1          |   0.00     |   0.00           |   0.00            |      0 /     20 |      3 /     59 |
+|       sec       |   0.00     |   0.00           |   0.00            |      7          |     14          |
+|       min       |   0.00     |   0.00           |   0.00            |      7          |     23          |
+|       hour      |   0.00     |   0.00           |   0.00            |      6          |     19          |
+|     ac          |   0.00     |   0.00           |   0.00            |      0 /     52 |     30 /    114 |
+|       ac3       |   0.00     |   0.00           |   0.00            |     13          |     21          |
+|       ac2       |   0.00     |   0.00           |   0.00            |     13          |     21          |
+|       ac1       |   0.00     |   0.00           |   0.00            |     13          |     21          |
+|       ac0       |   0.00     |   0.00           |   0.00            |     13          |     21          |
+|     seg_disp    |   0.00     |   0.00           |   0.00            |      0          |      7          |
+-----------------------------------------------------------------------------------------------------------
+
+
+4.  Warnings
+--------------------------------------------------------------------------------
+WARNING:PowerEstimator:270 - Power estimate is considered inaccurate. To see details, generate an advanced report with the "-v" switch.
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP/IBUFG" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "div_10/clk_p" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "div_10/clk_p1" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "div_100/clk_p" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "div_100/clk_p1" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "div_5M/clk_p" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "div_5M/clk_p1" is zero.
+WARNING:Power:1369 - Clock frequency for one or more clocks was not found through
+timing constraints (PCF file) or simulation data.  Without knowing the
+clock frequency of all clocks, dynamic power information for those clock
+domains will default to zero which may under-estimate the power for this
+design.  To avoid this warning, provide at least one of the following:
+  1. The proper timing constraints (PERIOD) for clocks (re-implement design
+     and load the newly generated PCF file into XPower Analyzer)
+  2. A post PAR simulation-generated VCD or SAIF file indicating clock
+     frequencies
+  3. The clock frequency for clocks in the "By Type -> Clocks" view in the
+     XPower Analyzer GUI and then applying "Update Power Analysis"
+--------------------------------------------------------------------------------
+
+Analysis completed: Tue Jan 07 04:09:29 2014
+----------------------------------------------------------------
