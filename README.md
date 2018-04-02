@@ -1,5 +1,7 @@
 基於FPGA的電子鐘
 
+有圖版見 Readme.odt
+
 實作：
 整個設計分成幾個部分，top module為 digi_clock，詳細電路圖需用ISE檢視。
  1. clk_gen ─ 負責產生除頻後的clock，共有三個，分別提供1kHz, 10Hz, 5Hz的clock
